@@ -1,0 +1,17 @@
+[project]
+name = "python-study"
+version = "0.1.0"
+description = "Python from basics to advanced OOP and modern features"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["05_modern_python/03_python_3_13_and_beyond.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E401", "E701", "E702", "E731", "F401", "F811", "B018", "B006", "E402"]

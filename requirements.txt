@@ -1,0 +1,4 @@
+# Only needed for tests/tooling. The study scripts use the standard library only.
+pytest>=8.0
+mypy>=1.10
+ruff>=0.5
